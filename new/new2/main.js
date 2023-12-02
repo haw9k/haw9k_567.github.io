@@ -55,8 +55,9 @@
         resultSum *= amount;
     else
         alert("Error");
-    let result = document.getElementById("result");
-    result.innerHTML = "Стоимость вашей покупки: "+resultSum+ " рублей";
+        var result = resultSum;
+        alert("Стоимость заказа: " + result + " рублей");
+    
     let prodPrice = document.getElementById("prodPrice");
     prodPrice.innerHTML = price;
   }
