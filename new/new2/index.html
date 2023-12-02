@@ -256,7 +256,7 @@
   <div class="row">
     <p>Меню</p>
     <div class="col" >
-      <p>Выберите машину: </p>
+      <p><label for="carproduct">Выберите машину:</label> </p>
       <select name="product-choice"  onclick="change()">
         <option value="1">Volkswagen Passat</option>
         <option value="2">Hyundai Santa Fe</option>
@@ -269,13 +269,12 @@
     <div class="col">
       <p>
         Введите количество:
-        <input id="amount-of-products" type="number" min="1" max="3" value="1"/>
+        <input for="kolichestvo" id="amount-of-products" type="number" min="1" max="3" value="1"/>
       </p>
     </div>
     <div class="col">
       <br />
-      <input type="button" value="Рассчитать сумму заказа" onclick="getSum()" />
-      <div id="result"></div>
+      <button class="button1" onclick="getSum()">Подсчитать стоимость</button><br><br>
       <script src="main.js"></script>
     </div>
   </div>
